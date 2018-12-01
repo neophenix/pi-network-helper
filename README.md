@@ -35,3 +35,7 @@ Using the provided systemd definition sample, add the service to systemd and ena
 ```
 
 That should be it, on boot the service will check if it is on the network and start the service(s) or go into AP mode.
+
+### Small Gotcha
+
+Forgot that right now this uses the LCD to show if it is going into AP mode or not, so one would need that setup to get that funcationality, or at least I2C support on the machine to have it not panic (maybe, not sure haven't tried)
