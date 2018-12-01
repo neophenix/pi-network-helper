@@ -1,0 +1,11 @@
+[Unit]
+Description=Helper script to get a pi on a network
+Requires=network.target
+After=network.target
+
+[Service]
+ExecStart=BINARYNAMEHERE -services drinkmachine -apconf /root/wlan0.ap
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

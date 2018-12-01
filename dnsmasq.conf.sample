@@ -1,0 +1,4 @@
+no-resolv
+interface=wlan0
+dhcp-range=10.1.100.51,10.1.100.55,255.255.255.0,24h
+server=8.8.8.8
